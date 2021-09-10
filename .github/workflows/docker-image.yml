@@ -1,4 +1,4 @@
-name: pi_python_opencv_confKafka
+name: pi_python_opencv_confkafka
 
 on:
   push:
@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image for opencv along with confluent_kafka (python
-      run: docker build . --tag pi_python_opencv_confKafka:$(date +%s)
+      run: docker build . --tag pi_python_opencv_confkafka:$(date +%s)

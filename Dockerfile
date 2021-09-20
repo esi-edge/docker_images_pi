@@ -1,6 +1,7 @@
-FROM mohaseeb/raspberrypi3-python-opencv:latest
+#FROM mohaseeb/raspberrypi3-python-opencv:latest
+FROM sgtwilko/rpi-raspbian-opencv:latest
 
-WORKDIR /usr/app
+WORKDIR /app #/usr/app
 
 ADD ./requirements.txt ./ 
 

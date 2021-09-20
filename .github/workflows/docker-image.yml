@@ -10,9 +10,11 @@ jobs:
 
   build: 
 
-    runs-on: ubuntu-18.04
+    runs-on: arm-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image for opencv along with confluent_kafka (python)
       run: docker build . --tag pi_opencv_confkafka:$(date +%s)
+      env:
+          HOST_NAME: Pi1
